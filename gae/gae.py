@@ -137,7 +137,7 @@ class ServerPost(webapp2.RequestHandler):
         
         slot = ServerGetSlot()
 
-        if not slot:
+        if None==slot:
             self.response.out.write('full')
             return
 
